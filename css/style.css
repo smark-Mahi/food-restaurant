@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 900;
+    font-size: larger;
+
+}
+p{
+    font-weight: 600;
+    color: rgb(45, 111, 197);
+
+
+}
+.fruit{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(https://post.healthline.com/wp-content/uploads/2020/03/adhd-foods-to-avoid_thumb-732x549.jpg);
+    background-size: cover;
+}
+.fruit .content{
+    max-width: 900px;
+    text-align: center;
+}
+.banner .content h2{
+    font-size: 20px;
+    color: white;
+    font-weight: 100;
+
+}
+.btn{
+    font-size: 1em;
+    color: rgba(22, 206, 145, 0.836);
+    background: red;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: line-through;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    
+}
+.btn:hover{
+    letter-spacing: 6px;
+}
+h2:hover{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+
+
+header{
+    position: fixed;
+    top=0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+header.logo{
+    color: burlywood;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+
+}
+header span{
+    color:red
+}
+header .navigation{
+    position: relative;
+    display: flex;
+}
+header .navigation li{
+    list-style: none;
+    margin-left: 30px;
+}
+header .navigation li a{
+    text-decoration: noney;
+    color: white;
+    font-weight: 300;
+}
+body{
+    min-height: 1000px;
+}
+ header .navigation li a:hover{
+     color: red;
+ }
+ section{
+     padding: 100px;
+ }
+ .row{
+     position: relative;
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+ }
+ .row .col50{
+     position: relative;
+     width: 48%;
+ }
+ .py{
+     color: black;
+     font-size: 2em;
+     font-weight: 300;
+ }
+ .py span{
+    color: red;
+    font-size: 2em;
+    font-weight: 300;
+
+ }
+ .text{
+    color: black;
+    font-size: 2em;
+    font-weight: 300;
+}
+.text span{
+   color: red;
+   font-size: 2em;
+   font-weight: 300;
+}
+ div img{
+     width: 500px;
+     height: 500px;
+ }
+
+ .front1, .back1{
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     backface-visibility: hidden;
+     transition: all 0.5s ease;
+    
+ }
+ .front1 img{
+     width: 100%;
+     height: 100%;
+ }
+ .back1{
+     background-color: lavender;
+     color: black;
+     text-align: center;
+     top: -100%;
+     transition:all 0.5s ease;
+     
+ }
+ .col50{
+     overflow: hidden;
+     transition:all 0.5s ease;
+    
+
+ }
+ .element:hover .back1{
+     top: 0;
+     
+ }
+ .col50:hover{
+    transform: scale(0.7);
+    border-radius: 50%;
+    border: 20px solid transparent;
+ }
+ .col50:hover .back-content{
+     transform: scale(1.5);
+     padding-top: 10%;
+ }
+ .title {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+ }
+ .mmm h5{
+     text-align: center;
+     text-decoration: line-through;
+     
+ }
+ .mmm .content{
+     display: flex;
+     justify-content: center;
+     flex-direction: row-reverse;
+     flex-wrap: wrap;
+     margin-top: 40px;
+
+ }
+ .mmm .content .box{
+     width: 340px;
+     margin: 20px;
+     border: 15px solid rgba(241, 233, 233, 0.911);
+ }
+ .mmm .content .box .ig{
+     position: relative;
+     width: 100%;
+     height: 300px;
+ }
+ .mmm .content .box .ig img{
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+
+ }
+ .mmm .content .box .text{
+     padding: 15px 0 5px;
+ }
+ .mmm .content .box .text h3{
+     font-weight: 400;
+     color: black;
+ }
+ .expert .content{
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     flex-direction: row;
+     margin-top: 40px;
+ }
+ .expert .content .box{
+     width: 250px;
+     margin: 15px;
+ }
+ .expert .content .box .ig{
+     position: relative;
+     width: 100%;
+     height: 300px;
+ }
+
+ .expert .content .box .ig img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+ }
+ .expert .content .box  .text{
+     padding: 15px 0 5px;
+ }
+ .expert .content .box  .text h3{
+     font-weight: 400;
+     color: black;
+ }
+ .ig, .txt{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: all 0.5s ease;
+   
+}
+.ig img{
+    width: 100%;
+    height: 100%;
+}
+.txt{
+    background-color:powderblue;
+    color: black;
+    font-weight: 100;
+    text-align: center;
+    top: -100%;
+    transition:all 0.5s ease;
+    
+}
+.uuu{
+    overflow: hidden;
+    transition:all 0.5s ease;
+   
+
+}
+.box:hover .txt{
+    top: 0;
+    
+}
+.uuu:hover{
+   transform: scale(0.7);
+   
+}
+
+.testimonals .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+.testimonals .content .box{
+    width: 250px;
+    margin: 15px;
+}
+.testimonals .content .box .ig{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+h5{
+    text-align: center;
+}
+.testimonals {
+   background: url(https://www.stockvault.net/data/2017/02/03/222197/preview16.jpg);
+   background-size: cover;
+}
+.contact{
+    background: url(https://media.gettyimages.com/photos/butterflied-roast-chicken-picture-id1199802398?s=2048x2048);
+    background-size: cover;
+}
+.contactform{
+    padding: 75px 50px;
+    background: white;
+    max-width: 500px;
+    margin-top: 50px;
+}
+.il{
+    color: white;
+}
+.contactform h3{
+    color: black;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.contactform .inputbox{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contactform .inputbox input, .contactform .inputbox textarea{
+    width: 100%;
+    border: 1px solid black;
+    padding: 10px;
+    color: black;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+}
+.op{
+    background: lavenderblush;
+    color: black;
+}
+.btnn{
+    font-size: 1em;
+    color: rgba(22, 206, 145, 0.836);
+    background: cornflowerblue;
+    display: inline-block;
+    padding: 10px 80px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: line-through;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    
+}
+.btnn:hover{
+    letter-spacing: 6px;
+}
+.yyy{
+    margin: 0px;
+    padding: 3px;
+}
+.yyy:hover{
+    background: mistyrose;
+    color: slateblue;
+    
+
+}
+.copyrighttext{
+    padding: 8px 40px;
+    border-top: 1px solid burlywood;
+    text-align: center;
+}
+.copyrighttext p{
+    color: #000;
+
+}
+.copyrighttext a{
+    color: red;
+    font-weight: 500;
+    text-decoration: none;
+}
+@media  {max-width: 480px;
+    header{
+        padding: 10px 20px;
+    }
+    section{
+        padding: 20px;
+
+    }
+    .banner .content h2{
+        font-size: 2.2em;
+        color: black;
+    }
+    //.row{
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        width: 100%;
+        display: flex;
+
+    }
+    //.row .col50{
+        position: relative;
+        width: 48%;
+    }
+    //.row .col50 .ig{
+       position: relative;
+       width: 100%;
+        height: 300px;
+        margin-top: 20px;
+    }
+    .menu .content{
+        
+        margin-top: 20px;
+    }
+    .menu .content .box{
+        //width: 340px;
+        margin: 10px;
+       // border: 15px solid black;
+        //box-shadow: 0 5px 35px wheat;
+
+    }
+    .menu .content .box .ig{
+        //position: relative;
+        //width: 100%;
+        height: 260px;
+    }
+    .title{
+       
+        text-align: center;
+    }
+    .text{
+        font-size: 1.8em;
+        line-height: 1.5em;
+        margin-bottom: 15px;
+        font-weight: 300;
+    }
+    .testimonals .content .box{
+        width: 340px;
+        padding: 20px;
+    }
+    .contactform{
+        padding: 35px 40px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+
+    
+    
+}
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: black;
+    color: white;
+}
+footer h3{
+   display: inline-block;
+    border-bottom:1px solid red;
+}
+
+footer li a:hover{
+    color: red;
+    text-decoration: underline;
+}
+footer .container .sec h6{
+    color: white;
+}
+.sci li a svg{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+.quicklines{
+    position: relative;
+}
+.quicklines li{
+    list-style: none;
+}
+.quicklines li a{
+    color: white;
+    text-decoration: none;
+}
+.ipo{
+    font-style: normal;
+    font-weight: 100;
+    font-weight: 100;
+    list-style: none;
+    color: white;
+}
+footer .container{
+    width: 100%;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    margin-right: 22px;
+    
+}
+
+ul{
+    list-style: none;
+    display: inline-block;
+   
+}
+svg{
+    color: palegreen;
+}
+svg:hover{
+
+   
+    color: red;
+    background: rgba(255, 255, 255, 0.89);
+    transition: all 0.5s ease;
+}
+.copyrighttext a:hover{
+    border: 2px solid white;
+}
